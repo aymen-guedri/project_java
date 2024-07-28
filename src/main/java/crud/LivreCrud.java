@@ -23,7 +23,6 @@ public class LivreCrud {
             preparedStatement.setFloat(5, livre.getPrix());
             preparedStatement.setString(6, livre.getGenre());
             preparedStatement.setString(7, livre.getDisponible());
-            preparedStatement.setString(8, livre.getImageUrl()); // Set imageUrl parameter
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -52,7 +51,6 @@ public class LivreCrud {
             preparedStatement.setFloat(5, livre.getPrix());
             preparedStatement.setString(6, livre.getGenre());
             preparedStatement.setString(7, livre.getDisponible());
-            preparedStatement.setString(8, livre.getImageUrl()); // Set imageUrl parameter
             preparedStatement.setInt(9, livre.getId());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -76,8 +74,7 @@ public class LivreCrud {
                         resultSet.getString("isbn"),
                         resultSet.getFloat("prix"),
                         resultSet.getString("genre"),
-                        resultSet.getString("disponible"),
-                        resultSet.getString("imageUrl") // Include imageUrl
+                        resultSet.getString("disponible")
                 );
                 livres.add(livre);
             }

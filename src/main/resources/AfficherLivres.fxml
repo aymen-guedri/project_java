@@ -24,7 +24,7 @@
         <TextField fx:id="prixTextField" promptText="Prix" />
         <TextField fx:id="genreTextField" promptText="Genre" />
         <DatePicker fx:id="datePicker" prefHeight="25.0" prefWidth="196.0" promptText="Date de Publication" />
-        <Button onAction="#uploadCoverImage" text="Image Couverture" />
+
         <ComboBox fx:id="disponibiliteComboBox" promptText="Disponibilité">
             <items>
                 <FXCollections fx:factory="observableArrayList">
