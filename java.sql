@@ -60,7 +60,8 @@ CREATE TABLE `reservation` (
   `date_debut` date DEFAULT NULL,
   `date_fin` date DEFAULT NULL,
   `nom_client` varchar(255) DEFAULT NULL,
-  `cin_client` varchar(255) DEFAULT NULL
+  `cin_client` varchar(255) DEFAULT NULL,
+  `archived` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -68,8 +69,8 @@ CREATE TABLE `reservation` (
 --
 
 INSERT INTO `reservation` (`id`, `livre_id`, `date_debut`, `date_fin`, `nom_client`, `cin_client`) VALUES
-(2, 4, '2024-05-09', '2024-05-25', 'flen ', '123456789'),
-(4, 11, '2024-05-16', '2024-05-16', 'Amine Guesmi', '12457996');
+(2, 4, '2024-06-15', '2024-07-28', 'Marouane ', '123456789'),
+(4, 11, '2024-05-16', '2024-07-16', 'Oussama', '12457996');
 
 -- --------------------------------------------------------
 
@@ -92,7 +93,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `username`, `email`, `password`, `phoneNumber`, `role`) VALUES
 (1, 'Aymen Guedri', 'aymenguedri01@gmail.com', '123456', '24361713', 'ADMIN'),
-(2, 'oussama bejaoui', 'bejaouioussama556@gmail.com', '123456', '97225212', 'ADMIN');
+(2, 'oussama bejaoui', 'bejaouioussama556@gmail.com', '123456', '23156781', 'ADMIN');
 
 --
 -- Indexes for dumped tables

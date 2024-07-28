@@ -84,7 +84,7 @@ public class ReservationCrud {
 
         List<Reservation> reservations = new ArrayList<>();
         try {
-            String query = "SELECT * FROM Reservation WHERE archived = false";
+            String query = "SELECT * FROM Reservation WHERE archived = 0";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
@@ -113,7 +113,7 @@ public class ReservationCrud {
 
         List<Reservation> reservations = new ArrayList<>();
         try {
-            String query = "SELECT * FROM Reservation WHERE archived = true";
+            String query = "SELECT * FROM Reservation WHERE archived = 1";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
@@ -169,8 +169,7 @@ public class ReservationCrud {
                         resultSet.getString("isbn"),
                         resultSet.getFloat("prix"),
                         resultSet.getString("genre"),
-                        resultSet.getString("disponible"),
-                        resultSet.getString("imageUrl")
+                        resultSet.getString("disponible")
                 );
             }
         } catch (SQLException e) {
