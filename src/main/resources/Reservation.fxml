@@ -23,10 +23,10 @@
         </TableView>
         <HBox layoutX="14.0" layoutY="350.0" />
 
-         <Button layoutX="669.0" layoutY="390.0" onAction="#supprimerReservation" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #F12020;" text="Supprimer" textFill="WHITE" />
-        <Button fx:id="archiverButton" layoutX="537.0" layoutY="390.0" onAction="#archiverReservation" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #52BE80;" text="Archiver" textFill="WHITE" />
+         <Button layoutX="669.0" layoutY="390.0" onAction="#supprimerReservation" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #FF4242;" text="Supprimer" textFill="WHITE" />
+        <Button fx:id="archiverButton" layoutX="537.0" layoutY="390.0" onAction="#archiverReservation" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #071013;" text="Archiver" textFill="WHITE" />
 
-    <VBox alignment="CENTER" prefHeight="62.0" prefWidth="830.0" spacing="20" style="-fx-background-color: #6CB5E8;">
+    <VBox alignment="CENTER" prefHeight="62.0" prefWidth="830.0" spacing="20" style="-fx-background-color: #C69C72;">
       <children>
          <Label prefHeight="62.0" prefWidth="848.0" style="-fx-font-size: 20px;" text="Gestion des Réservations" textFill="WHITE">
             <padding>

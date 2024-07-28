@@ -17,7 +17,7 @@
 
 
 <AnchorPane prefHeight="548.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LivreController">
-    <VBox layoutX="488.0" layoutY="114.0" spacing="10.0">
+    <VBox layoutX="488.0" layoutY="114.0" spacing="16.0">
         <TextField fx:id="titreTextField" promptText="Titre" />
         <TextField fx:id="auteurTextField" promptText="Auteur" />
         <TextField fx:id="isbnTextField" promptText="ISBN" />
@@ -35,12 +35,12 @@
         </ComboBox>
       <HBox>
          <children>
-              <Button onAction="#modifierLivre" style="-fx-background-color: #F5B041;" text="Modifier Livre" textFill="WHITE">
+              <Button onAction="#modifierLivre" style="-fx-border: 1px #0267C1 solid;" text="Modifier Livre" textFill="WHITE">
                <HBox.margin>
                   <Insets right="16.0" />
                </HBox.margin>
             </Button>
-            <Button onAction="#ajouterLivre" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #28B463;" text="Ajouter Livre" textFill="WHITE" />
+            <Button onAction="#ajouterLivre" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #0267C1;" text="Ajouter Livre" textFill="#0267C1" />
          </children>
       </HBox>
 

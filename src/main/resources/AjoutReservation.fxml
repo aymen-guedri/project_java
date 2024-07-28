@@ -21,10 +21,10 @@
 </VBox>
 
     <HBox layoutX="36.0" layoutY="330.0" spacing="10">
-        <Button onAction="#validerAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #28B463;" text="Valider" textFill="WHITE" />
-        <Button onAction="#annulerAction" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #F1C40F;" text="Annuler" textFill="WHITE" />
+        <Button onAction="#validerAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #0267C1;" text="Valider" textFill="WHITE" />
+        <Button onAction="#annulerAction" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #FF4242;" text="Annuler" textFill="WHITE" />
     </HBox>
-   <VBox alignment="CENTER" layoutX="-7.0" prefHeight="62.0" prefWidth="610.0" spacing="20" style="-fx-background-color: #6CB5E8;">
+   <VBox alignment="CENTER" layoutX="-7.0" prefHeight="62.0" prefWidth="610.0" spacing="20" style="-fx-background-color: #C69C72;">
       <children>
          <HBox>
             <children>
